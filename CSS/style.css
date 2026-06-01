@@ -1,0 +1,486 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fdf0ff; /* very light pink background */
+    color: #1a1a1a; /* black text */
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ===== HEADER ===== */
+.header {
+    position: fixed; /* fixed at top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #6a0dad, #ff69b4); /* purple to pink */
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-section img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.logo-section h1 {
+    font-size: 1.8rem;
+}
+
+.tagline {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* ===== NAVIGATION ===== */
+.navbar {
+    margin-top: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: rgba(255,255,255,0.3);
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    padding-top: 160px; /* leave space for fixed header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* ===== CARD-LIKE SECTIONS ===== */
+section {
+    background: white;
+    width: 85%;
+    max-width: 900px;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+section h2 {
+    color: #6a0dad; /* purple headings */
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #ff69b4; /* pink subheadings */
+    margin: 10px 0 5px 0;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* ===== IMAGES ===== */
+.support-image {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+/* ===== LISTS ===== */
+ul {
+    list-style: disc inside;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #1a1a1a; /* black footer */
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: #ff69b4; /* pink links */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .logo-section {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .main-content {
+        padding-top: 180px;
+    }
+}
+
+/* ===== RESET & GLOBAL STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf0ff; /* light pink background */
+    color: #111;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ===== FIXED HEADER ===== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #6a0dad, #ff69b4); /* purple to pink */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    border: 3px solid white;
+}
+
+.logo-section h1 {
+    font-size: 1.8rem;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* ===== NAVIGATION ===== */
+.navbar {
+    margin-top: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    padding-top: 220px; /* space for fixed header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 90%;
+    margin: auto;
+}
+
+/* ===== CARD-LIKE SECTIONS ===== */
+.content-box {
+    background-color: white;
+    width: 80%;
+    max-width: 900px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.content-box:hover {
+    transform: translateY(-5px);
+}
+
+.content-box h2 {
+    color: #6a0dad; /* purple */
+    margin-bottom: 15px;
+}
+
+.content-box p {
+    margin-bottom: 15px;
+}
+
+/* ===== IMAGES ===== */
+.donation-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #111; /* black */
+    color: white;
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: #ff69b4; /* pink links */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .logo-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-content {
+        padding-top: 300px;
+    }
+
+    .content-box {
+        width: 95%;
+    }
+}
+/* ===== RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+/* ===== BODY ===== */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #fff0fb;
+    color: #111;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ===== FIXED HEADER ===== */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #6a0dad, #ff1493);
+    color: white;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ===== LOGO ===== */
+header img{
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+/* ===== HEADER TEXT ===== */
+header h2{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p{
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* ===== NAVIGATION ===== */
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(255,255,255,0.1);
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+nav ul a:hover{
+    background-color: rgba(255,255,255,0.3);
+    transform: scale(1.05);
+}
+
+/* ===== MAIN CONTENT ===== */
+main{
+    padding-top: 260px;
+    width: 90%;
+    margin: auto;
+}
+
+/* ===== CARD SECTION ===== */
+section{
+    background-color: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+/* ===== HOVER EFFECT ===== */
+section:hover{
+    transform: translateY(-5px);
+}
+
+/* ===== MAIN HEADING ===== */
+section h2{
+    color: #6a0dad;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+/* ===== SUBHEADINGS ===== */
+section h3{
+    color: #ff1493;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+/* ===== PARAGRAPHS ===== */
+section p{
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer p{
+    margin: 8px 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px){
+
+    header{
+        padding: 15px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main{
+        padding-top: 350px;
+    }
+
+    section{
+        width: 95%;
+        padding: 25px;
+    }
+
+    header h2{
+        font-size: 1.5rem;
+    }
+
+    section h2{
+        font-size: 1.6rem;
+    }
+
+    section h3{
+        font-size: 1.2rem;
+    }
+}
+
